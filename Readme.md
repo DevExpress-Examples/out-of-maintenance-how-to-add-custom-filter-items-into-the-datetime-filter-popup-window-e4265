@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/RangeDate/Form1.cs) (VB: [Form1.vb](./VB/RangeDate/Form1.vb))
+* [MyDateFilterPopup.cs](./CS/RangeDate/MyGridControl/MyDateFilterPopup.cs) (VB: [MyDateFilterPopup.vb](./VB/RangeDate/MyGridControl/MyDateFilterPopup.vb))
+* [MyGridColumn.cs](./CS/RangeDate/MyGridControl/MyGridColumn.cs) (VB: [MyGridColumn.vb](./VB/RangeDate/MyGridControl/MyGridColumn.vb))
+* [MyGridControl.cs](./CS/RangeDate/MyGridControl/MyGridControl.cs) (VB: [MyGridControl.vb](./VB/RangeDate/MyGridControl/MyGridControl.vb))
+* [MyGridView.cs](./CS/RangeDate/MyGridControl/MyGridView.cs) (VB: [MyGridView.vb](./VB/RangeDate/MyGridControl/MyGridView.vb))
+* [MyOptionsColumnFilter.cs](./CS/RangeDate/MyGridControl/MyOptionsColumnFilter.cs) (VB: [MyOptionsColumnFilter.vb](./VB/RangeDate/MyGridControl/MyOptionsColumnFilter.vb))
+* [Program.cs](./CS/RangeDate/Program.cs) (VB: [Program.vb](./VB/RangeDate/Program.vb))
+<!-- default file list end -->
 # How to add custom filter items into the DateTime filter popup window 
 
 
