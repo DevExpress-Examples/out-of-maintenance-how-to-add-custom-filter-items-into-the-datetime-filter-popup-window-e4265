@@ -10,4 +10,4 @@
 <!-- default file list end -->
 # How to add custom filter items into the DateTime filter popup window 
 
-<p>You can use the <a href="https://documentation.devexpress.com/WindowsForms/DevExpressXtraGridViewsBaseColumnView_ShowFilterPopupDatetopic.aspx">FilterPopupExcelData</a> event to add a custom filter item to the filter dropdown. See the <a href="https://documentation.devexpress.com/WindowsForms/DevExpressXtraGridViewsBaseColumnView_ShowFilterPopupDatetopic.aspx">Example</a> topic for additional information and code snippet.</p>
+<p>You can use the <a href="https://documentation.devexpress.com/WindowsForms/DevExpressXtraGridViewsBaseColumnView_ShowFilterPopupDatetopic.aspx">FilterPopupExcelData</a> event to add a custom filter item to the filter dropdown. See the <a href="https://documentation.devexpress.com/WindowsForms/DevExpressXtraGridViewsBaseColumnView_ShowFilterPopupDatetopic.aspx">Example</a> topic for additional information and code snippet. </p>
