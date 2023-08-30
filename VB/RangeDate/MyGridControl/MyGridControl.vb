@@ -1,13 +1,10 @@
-﻿Imports System
-Imports System.Linq
 Imports DevExpress.XtraGrid
 Imports DevExpress.XtraGrid.Registrator
-Imports System.Collections.Generic
 Imports DevExpress.XtraGrid.Views.Base
 
-
 Namespace DateRange
-    <System.ComponentModel.DesignerCategory("")> _
+
+    <System.ComponentModel.DesignerCategory("")>
     Public Class MyGridControl
         Inherits GridControl
 
@@ -20,11 +17,12 @@ Namespace DateRange
     Public Class MyGridViewInfoRegistrator
         Inherits GridInfoRegistrator
 
-        Public Overrides ReadOnly Property ViewName() As String
+        Public Overrides ReadOnly Property ViewName As String
             Get
                 Return "MyGridView"
             End Get
         End Property
+
         Public Overrides Function CreateView(ByVal grid As GridControl) As BaseView
             Return New MyGridView(TryCast(grid, GridControl))
         End Function

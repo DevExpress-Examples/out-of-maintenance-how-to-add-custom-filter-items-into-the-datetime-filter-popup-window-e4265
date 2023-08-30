@@ -1,27 +1,24 @@
-﻿Imports System
-Imports System.Linq
 Imports DevExpress.XtraGrid.Columns
-Imports System.Collections.Generic
 Imports DevExpress.Utils.Controls
 
 Namespace DateRange
+
     Public Class MyOptionsColumnFilter
         Inherits OptionsColumnFilter
 
         Protected Friend UseFilterPopupRangeDateMode As Boolean = False
 
-        Private filterPopupMode_Renamed As FilterPopupModeExtended
+        Private filterPopupModeField As FilterPopupModeExtended
 
-        Public Shadows Property FilterPopupMode() As FilterPopupModeExtended
+        Public Overloads Property FilterPopupMode As FilterPopupModeExtended
             Get
-                Return filterPopupMode_Renamed
+                Return filterPopupModeField
             End Get
+
             Set(ByVal value As FilterPopupModeExtended)
-                If FilterPopupMode = value Then
-                    Return
-                End If
+                If FilterPopupMode = value Then Return
                 Dim prevValue As FilterPopupModeExtended = FilterPopupMode
-                filterPopupMode_Renamed = value
+                filterPopupModeField = value
                 OnChanged(New BaseOptionChangedEventArgs("FilterPopupMode", prevValue, FilterPopupMode))
             End Set
         End Property

@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to add custom filter items into the DateTime filter popup window
 ' 
 ' This example demonstrates how to add the capability to enter "greater than",
@@ -72,32 +72,29 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E4265
-
 Imports System
-Imports System.Collections.Generic
 Imports System.Data
-Imports System.Linq
 Imports System.Windows.Forms
 Imports DevExpress.XtraEditors.Repository
 
-
 Namespace DateRange
-    Partial Public Class Form1
+
+    Public Partial Class Form1
         Inherits Form
 
         Public Sub New()
             InitializeComponent()
         End Sub
 
+        Private riDateEdit As RepositoryItemDateEdit = New RepositoryItemDateEdit()
 
-        Private riDateEdit As New RepositoryItemDateEdit()
-        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-            Dim dataTable As New DataTable()
+        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim dataTable As DataTable = New DataTable()
             dataTable.Columns.Add("Range Date", GetType(Date))
             dataTable.Columns.Add("Event", GetType(String))
-            Dim row0() As Object = { Date.Today - New TimeSpan(1, 0, 0, 0), "Yesterday" }
-            Dim row1() As Object = { Date.Today, "Today" }
-            Dim row2() As Object = { Date.Today + New TimeSpan(1, 0, 0, 0), "Tomorrow" }
+            Dim row0 As Object() = New Object(1) {Date.Today - New TimeSpan(1, 0, 0, 0), "Yesterday"}
+            Dim row1 As Object() = New Object(1) {Date.Today, "Today"}
+            Dim row2 As Object() = New Object(1) {Date.Today + New TimeSpan(1, 0, 0, 0), "Tomorrow"}
             dataTable.Rows.Add(row0)
             dataTable.Rows.Add(row1)
             dataTable.Rows.Add(row2)
@@ -105,7 +102,6 @@ Namespace DateRange
             myGridView1.Columns("Range Date").ColumnEdit = riDateEdit
             myGridView1.Columns("Range Date").OptionsFilter.FilterPopupMode = FilterPopupModeExtended.Date
             myGridView1.Columns("Range Date").OptionsFilter.UseFilterPopupRangeDateMode = True
-
         End Sub
     End Class
 End Namespace

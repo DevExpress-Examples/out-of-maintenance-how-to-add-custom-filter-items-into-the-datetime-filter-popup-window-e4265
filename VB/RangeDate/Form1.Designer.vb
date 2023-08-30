@@ -1,5 +1,7 @@
-﻿Namespace DateRange
-    Partial Public Class Form1
+Namespace DateRange
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,20 +12,21 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
+#Region "Windows Form Designer generated code"
         Private Sub InitializeComponent()
             Me.myGridControl1 = New DateRange.MyGridControl()
             Me.myGridView1 = New DateRange.MyGridView()
             Me.gridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-            DirectCast(Me.myGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.myGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.myGridControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.myGridView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.gridView1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' myGridControl1
@@ -36,7 +39,7 @@
             Me.myGridControl1.Name = "myGridControl1"
             Me.myGridControl1.Size = New System.Drawing.Size(608, 487)
             Me.myGridControl1.TabIndex = 0
-            Me.myGridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() { Me.myGridView1, Me.gridView1})
+            Me.myGridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.myGridView1, Me.gridView1})
             ' 
             ' myGridView1
             ' 
@@ -57,20 +60,18 @@
             Me.Name = "Form1"
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
             Me.Text = "GridView Custom Column Filter "
-            DirectCast(Me.myGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.myGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gridView1, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.myGridControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.myGridView1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.gridView1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
+#End Region
+        Private myGridControl1 As DateRange.MyGridControl
 
-        Private myGridControl1 As MyGridControl
-        Private myGridView1 As MyGridView
+        Private myGridView1 As DateRange.MyGridView
+
         Private gridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-
-
     End Class
 End Namespace
-
