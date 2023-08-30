@@ -1,4 +1,7 @@
-﻿namespace DateRange
+﻿using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Views.Grid;
+
+namespace DateRange
 {
     partial class Form1
     {
@@ -23,8 +26,8 @@
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.myGridControl1 = new DateRange.MyGridControl();
-            this.myGridView1 = new DateRange.MyGridView();
+            this.myGridControl1 = new GridControl();
+            this.myGridView1 = new GridView();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
@@ -35,8 +38,6 @@
             // 
             this.myGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.myGridControl1.Location = new System.Drawing.Point(0, 0);
-            this.myGridControl1.LookAndFeel.SkinName = "Office 2010 Silver";
-            this.myGridControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.myGridControl1.MainView = this.myGridView1;
             this.myGridControl1.Name = "myGridControl1";
             this.myGridControl1.Size = new System.Drawing.Size(608, 487);
@@ -74,8 +75,8 @@
 
         #endregion
 
-        private MyGridControl myGridControl1;
-        private MyGridView myGridView1;
+        private GridControl myGridControl1;
+        private GridView myGridView1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
 
 
