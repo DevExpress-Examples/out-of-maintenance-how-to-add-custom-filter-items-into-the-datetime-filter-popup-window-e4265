@@ -20,7 +20,7 @@
 <p>In the latest versions, you can use the <a href="https://documentation.devexpress.com/WindowsForms/DevExpressXtraGridViewsBaseColumnView_ShowFilterPopupDatetopic.aspx">ShowFilterPopupDate</a> event to add a custom filter item to the filter dropdown. See the <a href="https://documentation.devexpress.com/WindowsForms/DevExpressXtraGridViewsBaseColumnView_ShowFilterPopupDatetopic.aspx">ShowFilterPopupDate</a> topic for additional information and code snippet.</p>
 <p><br>------------------------------------------------------------------------<br>This example demonstrates how to add the capability to enter "greater than", "less than", and "between" directly from the calendar popup filter list.</p>
 <p>To provide this functionality, it is necessary to create a GridControl descendant with a custom MyGridView.</p>
-<p>First, override the <strong>MyGridView.CreateDateFilterPopup</strong> and<strong> MyGridView.RaiseFilterPopupDate</strong> methods.</p>
+<p>First, override the <strong> MyGridView.CreateDateFilterPopup</strong> and<strong> MyGridView.RaiseFilterPopupDate</strong> methods.</p>
 
 
 ```cs
